@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  margin-left: 4.81rem;
+  margin-right: 4.81rem;
+
+  color: #333;
+  font-family: Inconsolata;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.12rem;
+  text-transform: uppercase;
+}
+
+.notFound {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.notFound img {
+  width: 33.7015rem;
+  height: 25.89056rem;
+  flex-shrink: 0;
+}
+
+.notFound div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.notFound div h1 {
+  color: var(--Gray-1, #333);
+  font-family: Space Mono;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.14rem;
+}
+
+.notFound div p {
+  color: var(--Gray-2, #4f4f4f);
+  font-family: Space Mono;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.0525rem;
+}
+
+.notFound div button {
+  color: #fff;
+  font-family: Space Mono;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.03063rem;
+  text-transform: uppercase;
+  width: 13.5rem;
+  height: 4.25rem;
+  flex-shrink: 0;
+  background: var(--Gray-1, #333);
+}
