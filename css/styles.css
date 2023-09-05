@@ -1,14 +1,25 @@
 * {
   margin: 0;
+  color: unset;
 }
+
 body {
   display: flex;
   flex-direction: column;
   height: 100vh;
   justify-content: space-between;
-  margin-left: 4.81rem;
-  margin-right: 4.81rem;
-
+  color: #333;
+  font-family: Inconsolata;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.12rem;
+}
+header {
+  padding: 2.5rem 0 0 4.81rem;
+}
+header h5 {
   color: #333;
   font-family: Inconsolata;
   font-size: 1.5rem;
@@ -20,15 +31,16 @@ body {
 }
 
 .notFound {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 7.42rem;
+  justify-content: center;
 }
 
 .notFound img {
   width: 33.7015rem;
-  height: 25.89056rem;
+  height: 27.96413rem;
   flex-shrink: 0;
 }
 
@@ -36,6 +48,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 30rem;
 }
 
 .notFound div h1 {
@@ -46,6 +59,7 @@ body {
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.14rem;
+  width: 36.625rem;
 }
 
 .notFound div p {
@@ -56,6 +70,7 @@ body {
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.0525rem;
+  width: 23.8125rem;
 }
 
 .notFound div button {
@@ -71,4 +86,106 @@ body {
   height: 4.25rem;
   flex-shrink: 0;
   background: var(--Gray-1, #333);
+}
+
+footer {
+  width: 100%;
+  color: #bdbdbd;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 1.5rem 0 1.5rem;
+  text-align: center;
+}
+
+footer a {
+  font-weight: 700;
+  text-decoration-line: underline;
+}
+
+@media (max-width: 576px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0 1.5rem 0 1.5rem;
+  }
+  header {
+    padding: 1.25rem 0 0 0;
+  }
+  header h5 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .notFound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4.5rem;
+  }
+
+  .notFound img {
+    width: 17.92688rem;
+    height: 14.875rem;
+  }
+
+  .notFound div {
+    display: flex;
+    width: 100%;
+    height: 20rem;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 0;
+  }
+
+  .notFound div h1 {
+    width: 100%;
+    font-size: 3rem;
+    letter-spacing: -0.105rem;
+  }
+
+  .notFound div p {
+    font-size: 1.125rem;
+    font-style: normal;
+    letter-spacing: -0.03938rem;
+    width: 20.5rem;
+  }
+
+  .notFound div button {
+    color: #fff;
+    font-family: Space Mono;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.03063rem;
+    text-transform: uppercase;
+    width: 13.5rem;
+    height: 4.25rem;
+    flex-shrink: 0;
+    background: var(--Gray-1, #333);
+  }
+
+  footer {
+    width: 100%;
+    color: #bdbdbd;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 0 0 1.5rem;
+    text-align: center;
+  }
+
+  footer a {
+    font-weight: 700;
+    text-decoration-line: underline;
+  }
 }
